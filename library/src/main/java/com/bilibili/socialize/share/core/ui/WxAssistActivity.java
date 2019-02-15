@@ -83,7 +83,7 @@ public class WxAssistActivity extends BaseAssistActivity<BaseWxShareHandler> {
         }
 
         Log.e(TAG, "gonna finish share with incorrect callback (cancel)");
-        finishWithCancelResult();
+        finishWithSuccessResult();
     }
 
     @Override
