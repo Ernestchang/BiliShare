@@ -143,7 +143,7 @@ public class BiliShareDelegateActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQ_CODE && data != null) {
-            int result = data.getIntExtra(REP_KEY_RESULT, RESULT_CANCEL);
+            int result = data.getIntExtra(REP_KEY_RESULT, RESULT_SUCCESS);
             if (result == RESULT_SUCCESS) {
                 Log.d(TAG, "act result: success");
                 finishWithSuccessResult();
